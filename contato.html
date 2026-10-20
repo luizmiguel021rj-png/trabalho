@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - NovaShop</title>
+    <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="imagens/favicon.svg" alt="Logo NovaShop">
+                <h1>Nova<span>Shop</span></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
+                    <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-contato">
+            <h2 class="titulo-secao">Fale Conosco</h2>
+            <p style="margin-bottom: 20px; color: #64748b;">Preencha os campos abaixo para enviar sua mensagem:</p>
+
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+                <div class="grupo-form">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="grupo-form">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaShop - Projeto escolar desenvolvido para avaliação.</p>
+    </footer>
+
+</body>
+</html>
