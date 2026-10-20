@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - NovaShop</title>
+    
+    <!-- Favicon com caminho relativo -->
+    <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="imagens/favicon.svg" alt="Ícone da loja NovaShop">
+                <h1>Nova<span>Shop</span></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
+                    <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container-contato">
+            <h2 class="titulo-secao">Fale Conosco</h2>
+            <p style="margin-bottom: 1.5rem; color: #6C757D;">Tem alguma dúvida, sugestão ou elogio? Preencha o formulário abaixo para entrar em contato com nossa equipe.</p>
+
+            <!-- Formulário de Contato com validação HTML5 -->
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+                
+                <!-- Campo Nome -->
+                <div class="grupo-form">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <!-- Campo E-mail -->
+                <div class="grupo-form">
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <!-- Campo Mensagem -->
+                <div class="grupo-form">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva aqui a sua mensagem..." required></textarea>
+                </div>
+
+                <!-- Botão de Envio -->
+                <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 NovaShop - Todos os direitos reservados.</p>
+        <p>Projeto acadêmico desenvolvido para fins de avaliação.</p>
+    </footer>
+
+</body>
+</html>
