@@ -1,0 +1,269 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO */
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+nav a:hover, nav a.ativo {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    flex: 1;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.banner {
+    background-color: #e2e8f0;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.banner h2 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.titulo-secao {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+}
+
+/* CARDS DE PRODUTOS */
+.grid-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-produto {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    width: 280px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-conteudo h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.card-conteudo p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.preco {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #16a34a;
+    margin-bottom: 12px;
+}
+
+/* FORMULÁRIO DE CONTATO */
+.container-contato {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupo-form {
+    margin-bottom: 15px;
+}
+
+.grupo-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.grupo-form input, .grupo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* DESENVOLVEDORES */
+.grid-devs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-dev {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-dev img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card-dev h3 {
+    color: #1e293b;
+    font-size: 1.1rem;
+}
+
+.card-dev .funcao {
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-dev p {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .card-produto, .card-dev {
+        width: 100%;
+    }
+}
